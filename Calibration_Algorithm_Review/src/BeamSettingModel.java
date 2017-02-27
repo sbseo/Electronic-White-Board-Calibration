@@ -2,7 +2,7 @@ import java.awt.EventQueue;
 
 public class BeamSettingModel {
 
-    //±Ê¿Ã
+    //Í∏∏Ïù¥
     public static double X;
     public static double Y;
     public static double H;
@@ -10,14 +10,14 @@ public class BeamSettingModel {
     public static double D;
     public static double d;
 
-    // ∫Ò¿≤
+    // ÎπÑÏú®
     public static double RATIO_FULLWIDTH;
     public static double RATIO_WIDTH;
     public static double RATIO_FULLHEIGHT;
     public static double RATIO_HEIGHT;
     public static BeamSettingView frame = null;
    
-    //∞¢µµ
+    //Í∞ÅÎèÑ
     public static double P1ThetaL;
     public static double P2ThetaL;
     public static double P3ThetaL;
@@ -28,7 +28,7 @@ public class BeamSettingModel {
     public static double P3ThetaR;
     public static double P4ThetaR;
     
-    //¿Âƒ° ±◊∏Æ±‚
+    //Ïû•Ïπò Í∑∏Î¶¨Í∏∞
     public static boolean drawDevice = false;
     
 	/**

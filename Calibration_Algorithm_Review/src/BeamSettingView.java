@@ -71,230 +71,230 @@ public class BeamSettingView extends JFrame {
 	private JPanel panel_4;
 	private JButton btnNewButton;
 	private JButton btnNewButton_1;
-    private BeamSettingView thisClass = this; 
-    
+	private BeamSettingView thisClass = this; 
+
 	/**
 	 * Create the frame.
 	 */
 	public BeamSettingView() {
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100, 100, 230, 450);
-		
+
 		contentPane = new JPanel();
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(new BoxLayout(contentPane, BoxLayout.Y_AXIS));
-		
+
 		JPanel panel = new JPanel();
 		contentPane.add(panel);
 		panel.setLayout(new GridLayout(7, 2, 0, 0));
-		
+
 		lblNewLabel = new JLabel("# Defined Value");
 		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lblNewLabel);
-		
+
 		lblNewLabel_7 = new JLabel(" ");
 		panel.add(lblNewLabel_7);
-		
+
 		lbl_X = new JLabel("X", SwingConstants.CENTER);
 		panel.add(lbl_X);
-		
+
 		txt_X = new JTextField();
 		panel.add(txt_X);
 		txt_X.setColumns(10);
-		
+
 		lbl_Y = new JLabel("Y");
 		lbl_Y.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lbl_Y);
-		
+
 		txt_Y = new JTextField();
 		panel.add(txt_Y);
 		txt_Y.setColumns(10);
-		
+
 		lbl_H = new JLabel("H");
 		lbl_H.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lbl_H);
-		
+
 		txt_H = new JTextField();
 		panel.add(txt_H);
 		txt_H.setColumns(10);
-		
+
 		lbl_D = new JLabel("D");
 		lbl_D.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lbl_D);
-		
+
 		txt_D = new JTextField();
 		panel.add(txt_D);
 		txt_D.setColumns(10);
-		
+
 		lbl_h = new JLabel("h");
 		lbl_h.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lbl_h);
-		
+
 		txt_h = new JTextField();
 		panel.add(txt_h);
 		txt_h.setColumns(10);
-		
+
 		lbl_d = new JLabel("d");
 		lbl_d.setHorizontalAlignment(SwingConstants.CENTER);
 		panel.add(lbl_d);
-		
+
 		txt_d = new JTextField();
 		panel.add(txt_d);
 		txt_d.setColumns(10);
-		
+
 		JPanel panel_1 = new JPanel();
 		contentPane.add(panel_1);
 		panel_1.setLayout(new GridLayout(6, 3, 0, 0));
-		
+
 		lblNewLabel_8 = new JLabel("# Angle");
 		lblNewLabel_8.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_1.add(lblNewLabel_8);
-		
+
 		lblNewLabel_9 = new JLabel(" ");
 		panel_1.add(lblNewLabel_9);
-		
+
 		lblNewLabel_10 = new JLabel(" ");
 		panel_1.add(lblNewLabel_10);
-		
+
 		lblNewLabel_11 = new JLabel("");
 		lblNewLabel_11.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_1.add(lblNewLabel_11);
-		
+
 		lblNewLabel_12 = new JLabel("thetaL");
 		lblNewLabel_12.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_1.add(lblNewLabel_12);
-		
+
 		lblNewLabel_13 = new JLabel("thetaR");
 		lblNewLabel_13.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_1.add(lblNewLabel_13);
-		
+
 		lblNewLabel_14 = new JLabel("P1");
 		lblNewLabel_14.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_1.add(lblNewLabel_14);
-		
+
 		txt_pl1 = new JTextField();
 		panel_1.add(txt_pl1);
 		txt_pl1.setColumns(10);
-		
+
 		txt_pr1 = new JTextField();
 		panel_1.add(txt_pr1);
 		txt_pr1.setColumns(10);
-		
+
 		lblNewLabel_15 = new JLabel("P2");
 		lblNewLabel_15.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_1.add(lblNewLabel_15);
-		
+
 		txt_pl2 = new JTextField();
 		panel_1.add(txt_pl2);
 		txt_pl2.setColumns(10);
-		
+
 		txt_pr2 = new JTextField();
 		panel_1.add(txt_pr2);
 		txt_pr2.setColumns(10);
-		
+
 		lblNewLabel_16 = new JLabel("P3");
 		lblNewLabel_16.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_1.add(lblNewLabel_16);
-		
+
 		txt_pl3 = new JTextField();
 		panel_1.add(txt_pl3);
 		txt_pl3.setColumns(10);
-		
+
 		txt_pr3 = new JTextField();
 		panel_1.add(txt_pr3);
 		txt_pr3.setColumns(10);
-		
+
 		lblNewLabel_17 = new JLabel("P4");
 		lblNewLabel_17.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_1.add(lblNewLabel_17);
-		
+
 		txt_pl4 = new JTextField();
 		panel_1.add(txt_pl4);
 		txt_pl4.setColumns(10);
-		
+
 		txt_pr4 = new JTextField();
 		panel_1.add(txt_pr4);
 		txt_pr4.setColumns(10);
-		
+
 		panel_3 = new JPanel();
 		contentPane.add(panel_3);
 		panel_3.setLayout(new GridLayout(3, 4, 0, 0));
-		
+
 		lblNewLabel_18 = new JLabel("# Ratio ");
 		lblNewLabel_18.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_3.add(lblNewLabel_18);
-		
+
 		lblNewLabel_19 = new JLabel("left");
 		lblNewLabel_19.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_3.add(lblNewLabel_19);
-		
+
 		lblNewLabel_20 = new JLabel("center");
 		lblNewLabel_20.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_3.add(lblNewLabel_20);
-		
+
 		lblNewLabel_21 = new JLabel("right");
 		lblNewLabel_21.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_3.add(lblNewLabel_21);
-		
+
 		lblNewLabel_22 = new JLabel("Width");
 		lblNewLabel_22.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_3.add(lblNewLabel_22);
-		
+
 		txt_widthLeft = new JTextField();
 		panel_3.add(txt_widthLeft);
 		txt_widthLeft.setColumns(10);
-		
+
 		txt_widthCenter = new JTextField();
 		panel_3.add(txt_widthCenter);
 		txt_widthCenter.setColumns(10);
-		
+
 		txt_widthRight = new JTextField();
 		panel_3.add(txt_widthRight);
 		txt_widthRight.setColumns(10);
-		
+
 		lblNewLabel_23 = new JLabel("Height");
 		lblNewLabel_23.setHorizontalAlignment(SwingConstants.CENTER);
 		panel_3.add(lblNewLabel_23);
-		
+
 		txt_heightLeft = new JTextField();
 		panel_3.add(txt_heightLeft);
 		txt_heightLeft.setColumns(10);
-		
+
 		txt_heightCenter = new JTextField();
 		panel_3.add(txt_heightCenter);
 		txt_heightCenter.setColumns(10);
-		
+
 		txt_heightRight = new JTextField();
 		panel_3.add(txt_heightRight);
 		txt_heightRight.setColumns(10);
-		
+
 		panel_4 = new JPanel();
 		contentPane.add(panel_4);
 		panel_4.setLayout(new GridLayout(2, 2, 0, 0));
-		
+
 		btnNewButton = new JButton("Auto");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
-				
+
 				insertAutoValue();
 				BeamSettingControl.initEnvironment(thisClass);
-				
+
 			}
 		});
 		panel_4.add(btnNewButton);
-		
+
 		btnNewButton_1 = new JButton("Confirm");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-			
+
 				BeamSettingControl.initConfirm(thisClass);
 				BoardView.drawPanel.repaint();
-		
+
 			}
 		});
 		panel_4.add(btnNewButton_1);
-		
+
 	}
 
 	public void insertAutoValue(){
@@ -304,16 +304,16 @@ public class BeamSettingView extends JFrame {
 		txt_D.setText("714");
 		txt_h.setText("65");
 		txt_d.setText("320");
-		
+
 		txt_widthLeft.setText("1");
 		txt_widthCenter.setText("18");
 		txt_widthRight.setText("1");
-		
+
 		txt_heightLeft.setText("1");
 		txt_heightCenter.setText("8");
 		txt_heightRight.setText("1");
 	}
-	
+
 	public double getTxt_pl1() {
 		return Double.parseDouble(txt_pl1.getText());
 	}
@@ -474,5 +474,5 @@ public class BeamSettingView extends JFrame {
 		this.txt_heightRight = txt_heightRight;
 	}
 
-	
+
 }

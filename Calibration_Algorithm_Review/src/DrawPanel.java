@@ -104,47 +104,47 @@ public class DrawPanel extends JPanel implements MouseInputListener {
 			g2.drawOval((int) (sensorRx - (DeviceSize / 2)), (DeviceSize / 2), DeviceSize, DeviceSize);
 			g2.setColor(Color.red);
 			g2.fillOval((int) (sensorRx - (DeviceSize / 2)), (DeviceSize / 2), DeviceSize, DeviceSize);	
-		
-		
+
+
 			int deviceLengthLineX1 = (int) (sensorLx - (DeviceSize / 2)); int deviceLengthLineY1 = (DeviceSize / 2) + 25;
 			int deviceLengthLineX2 = (int) (sensorRx - (DeviceSize / 2)) + DeviceSize; int deviceLengthLineY2 = (DeviceSize / 2) + 25;
-			
+
 			start = new Point(deviceLengthLineX1, deviceLengthLineY1);
 			end = new Point(deviceLengthLineX2, deviceLengthLineY2);
 
 			g2.setColor(Color.black);
 			drawDashedLine(g2, deviceLengthLineX1, deviceLengthLineY1, deviceLengthLineX2, deviceLengthLineY2);
-			
+
 			drawArrowHead(g2, start, end, Color.black);
 			drawArrowHead(g2, end, start, Color.black);
-			
+
 			/* Draw String */
 			g2.drawString(Double.toString(BeamSettingModel.d), (deviceLengthLineX1 + deviceLengthLineX2) / 2, (deviceLengthLineY1 + deviceLengthLineY2) / 2 - 5);
 
-		
+
 			/* 장치와 화면간의 거리 구하기 */
 			int heightLengthLineX1 = 582; int heightLengthLineY1 = (DeviceSize / 2) + 25;
 			int heightLengthLineX2 = 582; int heightLengthLineY2 = 100;
-			
+
 			drawDashedLine(g2, heightLengthLineX1, heightLengthLineY1, heightLengthLineX2, heightLengthLineY2);
-			
+
 			start = new Point(heightLengthLineX1, heightLengthLineY1);
 			end = new Point(heightLengthLineX2, heightLengthLineY2);
-			
+
 			drawArrowHead(g2, start, end, Color.black);
 			drawArrowHead(g2, end, start, Color.black);	
-			
+
 			/* Draw String */
 			g2.drawString(Double.toString(BeamSettingModel.H), (heightLengthLineX1 + heightLengthLineX2) / 2 + 25, (heightLengthLineY1 + heightLengthLineY2) / 2 );
 		}
 
-		
+
 	}
 
 	public void drawDevice(){
 		super.paintComponent(g2);
 		g2 = (Graphics2D)g2;		
-		
+
 
 	}
 
