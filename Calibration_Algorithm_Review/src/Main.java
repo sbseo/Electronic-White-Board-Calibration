@@ -8,6 +8,8 @@ import javax.swing.JMenuBar;
 import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 
+//인코딩 바꾼 버전! v0.2
+
 public class Main extends JFrame {
 	public Main() {
 	}
