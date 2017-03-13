@@ -11,6 +11,9 @@ import javax.swing.JMenuItem;
 //인코딩 바꾼 버전! v0.2
 
 public class Main extends JFrame {
+
+	public static BoardView frame;
+	
 	public Main() {
 	}
 
@@ -23,7 +26,7 @@ public class Main extends JFrame {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
-					BoardView frame = new BoardView();
+					frame = new BoardView();
 					frame.setVisible(true);
 				} catch (Exception e) {
 					e.printStackTrace();
