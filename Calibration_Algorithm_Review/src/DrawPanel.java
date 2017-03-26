@@ -169,26 +169,28 @@ public class DrawPanel extends JPanel implements MouseInputListener {
 			Point2D p4 = new Point2D.Double();
 		
 			// 각 점의 Y좌표 어디에 찍어야할지 구함.
-			calY(1, BeamSettingModel.P1ThetaL, BeamSettingModel.P1ThetaR);
-			calY(2, BeamSettingModel.P2ThetaL, BeamSettingModel.P2ThetaR);
-			calY(3, BeamSettingModel.P3ThetaL, BeamSettingModel.P3ThetaR);
-			calY(4, BeamSettingModel.P4ThetaL, BeamSettingModel.P4ThetaR);
+			//calY(1, BeamSettingModel.P1ThetaL, BeamSettingModel.P1ThetaR);
+			//calY(2, BeamSettingModel.P2ThetaL, BeamSettingModel.P2ThetaR);
+			//calY(3, BeamSettingModel.P3ThetaL, BeamSettingModel.P3ThetaR);
+			//calY(4, BeamSettingModel.P4ThetaL, BeamSettingModel.P4ThetaR);
 
 			// 각 점의 X좌표 어디에 찍어야 할지 구함 
-			calX(1, BeamSettingModel.P1ThetaL, BeamSettingModel.P1ThetaR);
-			calX(2, BeamSettingModel.P2ThetaL, BeamSettingModel.P2ThetaR);
-			calX(3, BeamSettingModel.P3ThetaL, BeamSettingModel.P3ThetaR);
-			calX(4, BeamSettingModel.P4ThetaL, BeamSettingModel.P4ThetaR);
+			//calX(1, BeamSettingModel.P1ThetaL, BeamSettingModel.P1ThetaR);
+			//calX(2, BeamSettingModel.P2ThetaL, BeamSettingModel.P2ThetaR);
+			//calX(3, BeamSettingModel.P3ThetaL, BeamSettingModel.P3ThetaR);
+			//calX(4, BeamSettingModel.P4ThetaL, BeamSettingModel.P4ThetaR);
+			
+		//	x1Point = 장
 			
 			p1.setLocation(x1Point, y1Point);
 			p2.setLocation(x2Point, y2Point);
 			p3.setLocation(x3Point, y3Point);
 			p4.setLocation(x4Point, y4Point);
-
+			
 			g2.drawOval((int)p1.getX(), (int)p1.getY(), 5, 5);
-			//g2.drawOval((int)p2.getX(), (int)p2.getY(), 5, 5);
-			//g2.drawOval((int)p3.getX(), (int)p3.getY(), 5, 5);
-			//g2.drawOval((int)p4.getX(), (int)p4.getY(), 5, 5);
+			g2.drawOval((int)p2.getX(), (int)p2.getY(), 5, 5);
+			g2.drawOval((int)p3.getX(), (int)p3.getY(), 5, 5);
+			g2.drawOval((int)p4.getX(), (int)p4.getY(), 5, 5);
 		}
 
 	}
@@ -220,6 +222,17 @@ public class DrawPanel extends JPanel implements MouseInputListener {
 
 	}
 
+	/*
+	 * public void calibrateAngle()
+        {
+            double calL = Math.Atan2(DevEnvironment.h, (DevEnvironment.X + DevEnvironment.d) / 2);
+            double calR = Math.Atan2(DevEnvironment.h, (DevEnvironment.X - DevEnvironment.d) / 2);
+            this.setThetaL(this.getThetaL(true) + calL, true);
+            this.setThetaR(this.getThetaR(true) + calR, true);
+        }
+	 */
+	
+	
 	/* thetaL과 thetaR을 통해 좌표(p1,p2,p3,p4)의 Y좌표를 구하는 함수 */ 
 	public void calY(int pointNum, double thetaL, double thetaR){ 
 
